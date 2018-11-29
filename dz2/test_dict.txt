@@ -1,0 +1,10 @@
+entity
+abstraction
+thing
+object
+whole
+congener
+organism
+benthos
+dwarf
+heterotroph
