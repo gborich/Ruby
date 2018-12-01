@@ -24,27 +24,39 @@ life = 3
 stars = ('*' * text.size).split('')
 puts stars.join
 
-while life != 0
-print'Введите букву: '
-letter = gets.chomp
-  if text.include?(letter)
-    puts 'Есть такая буква'
-    for n in (0..text.size) do
-      if text[n] == letter
-        stars[n] = letter
+print "Вы можете попробовать угадать слово сразу(для этого введите '1'), либо можете угадывать по буквам(для этого введите '2') "
+a = gets.to_i
+if a == 1
+  print 'Введите слово: '
+  word = gets.chomp
+  if word == text
+    abort 'Вы выиграли!'
+  else
+    abort 'Вы проиграли!'
+  end
+else
+  while life != 0
+  print'Введите букву: '
+  letter = gets.chomp
+    if text.include?(letter)
+      puts 'Есть такая буква'
+      for n in (0..text.size) do
+        if text[n] == letter
+          stars[n] = letter
+        end
+      end
+      puts stars.join
+    else
+      if life != 1
+        print 'Такой буквы нет, '
+        life -= 1
+        puts 'осталось ' + life.to_s + ' жизни.'
+      else
+        abort 'Игра закончена'
       end
     end
-    puts stars.join
-  else
-    if life != 1
-      print 'Такой буквы нет, '
-      life -= 1
-      puts 'осталось ' + life.to_s + ' жизни.'
-    else
-      abort 'Игра закончена'
+    if !stars.include?('*')
+      abort 'Вы выиграли!'
     end
-  end
-  if !stars.include?('*')
-    abort 'Вы выиграли!'
   end
 end
