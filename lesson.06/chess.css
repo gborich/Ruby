@@ -1,0 +1,71 @@
+table{
+    border-collapse: collapse;
+}
+
+/*td {*/
+    /*font-size: 50px;*/
+    /*height: 80px;*/
+    /*width: 80px;*/
+    /*text-align: center;*/
+    /*border-collapse: collapse;*/
+/*}*/
+
+/*tr:nth-child(odd) td:nth-child(odd) {*/
+    /*background-color: darkslategray;*/
+/*}*/
+
+/*tr:nth-child(odd) td:nth-child(even) {*/
+    /*background-color: aliceblue;*/
+/*}*/
+
+/*tr:nth-child(even) td:nth-child(even) {*/
+    /*background-color: darkslategray;*/
+/*}*/
+
+/*tr:nth-child(even) td:nth-child(odd) {*/
+    /*background-color: aliceblue;*/
+/*}*/
+
+/*tr:nth-child(1) {*/
+    /*background-color: white;*/
+/*}*/
+
+.white {
+    font-size: 50px;
+    background-color: aliceblue;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.black {
+    font-size: 50px;
+    background-color: darkslategray;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+}
+
+.player{
+    border-bottom: 1px black;
+    font-size: 30px;
+    background-color: antiquewhite;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+.status{
+    border-bottom: 1px black;
+    font-size: 20px;
+    background-color: #e3ffa2;
+    height: 40px;
+    width: 20px;
+    text-align: center;
+}
+.block2 {
+    width: 200px;
+    float: left;
+    position: relative;
+    top: -665px;
+    left: 670px;
+}
