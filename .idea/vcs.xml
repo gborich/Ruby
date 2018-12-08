@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chess" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/chessaplication" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/chessapp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/git_test" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/temp_folder" vcs="Git" />

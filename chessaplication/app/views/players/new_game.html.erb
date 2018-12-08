@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Chess</title>
+  <link rel="stylesheet" href="chess.css">
+</head>
+
+<body>
+<% a = rand(@champions.size) %>
+<h1>Black Player <strong>VS</strong>  <%= @champions[rand(a+1)][0] %></h1>
+<% @champions.delete_at(a) %>
+
+<table border="1">
+  <tr>
+    <td class="white">&#9820</td>
+    <td class="black">&#9822</td>
+    <td class="white">&#9821</td>
+    <td class="black">&#9819</td>
+    <td class="white">&#9818</td>
+    <td class="black">&#9821</td>
+    <td class="white">&#9822</td>
+    <td class="black">&#9823</td>
+  </tr>
+  <tr>
+    <td class="black">&#9823</td>
+    <td class="white">&#9823</td>
+    <td class="black">&#9823</td>
+    <td class="white">&#9823</td>
+    <td class="black">&#9823</td>
+    <td class="white">&#9823</td>
+    <td class="black">&#9823</td>
+    <td class="white">&#9823</td>
+  </tr>
+  <tr>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+    <td class="black">&nbsp;</td>
+    <td class="white">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="white">&#9817</td>
+    <td class="black">&#9817</td>
+    <td class="white">&#9817</td>
+    <td class="black">&#9817</td>
+    <td class="white">&#9817</td>
+    <td class="black">&#9817</td>
+    <td class="white">&#9817</td>
+    <td class="black">&#9817</td>
+  </tr>
+  <tr>
+    <td class="black">&#9814</td>
+    <td class="white">&#9816</td>
+    <td class="black">&#9815</td>
+    <td class="white">&#9813</td>
+    <td class="black">&#9812</td>
+    <td class="white">&#9815</td>
+    <td class="black">&#9816</td>
+    <td class="white">&#9814</td>
+  </tr>
+</table>
+<div class="block2">
+  <ul>
+    <h2>Список ожидания</h2>
+    <li><%= @champions[0][0] %></li>
+    <li><%= @champions[1][0] %></li>
+  </ul>
+</div>
+</body>
+
+
+</html>

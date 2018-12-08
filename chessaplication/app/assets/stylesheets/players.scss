@@ -1,0 +1,81 @@
+// Place all the styles related to the Players controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  text-align: center;
+}
+table{
+  border-collapse: collapse;
+}
+
+/*td {*/
+/*font-size: 50px;*/
+/*height: 80px;*/
+/*width: 80px;*/
+/*text-align: center;*/
+/*border-collapse: collapse;*/
+/*}*/
+
+/*tr:nth-child(odd) td:nth-child(odd) {*/
+/*background-color: darkslategray;*/
+/*}*/
+
+/*tr:nth-child(odd) td:nth-child(even) {*/
+/*background-color: aliceblue;*/
+/*}*/
+
+/*tr:nth-child(even) td:nth-child(even) {*/
+/*background-color: darkslategray;*/
+/*}*/
+
+/*tr:nth-child(even) td:nth-child(odd) {*/
+/*background-color: aliceblue;*/
+/*}*/
+
+/*tr:nth-child(1) {*/
+/*background-color: white;*/
+/*}*/
+
+.white {
+  font-size: 50px;
+  background-color: aliceblue;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+}
+
+.black {
+  font-size: 50px;
+  background-color: darkslategray;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+}
+
+.block2 {
+  width: 200px;
+  float: left;
+  position: relative;
+  top: -665px;
+  left: 670px;
+}
+
+td:hover {
+  border-color: #730E15;
+  border-width: 2px;
+}
+
+li ul {
+  position: absolute; /* Подменю позиционируются абсолютно */
+  display: none; /* Скрываем подменю */
+  margin-top: -6em; /* Сдвигаем подменю вверх */
+  font-size: 30px;
+  color: #B00100;
+}
+
+li:hover ul {
+  display: block;
+}
+.brd {
+  border-bottom: 1px solid #ccc;
+}

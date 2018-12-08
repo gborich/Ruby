@@ -1,0 +1,7 @@
+.menu {
+    text-align: center;
+}
+.menu li {
+    display: inline;
+    margin: 0px 15px;
+}
