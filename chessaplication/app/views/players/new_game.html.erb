@@ -96,8 +96,9 @@
 <div class="block2">
   <ul>
     <h2>Список ожидания</h2>
-    <li><%= @champions[0][0] %></li>
-    <li><%= @champions[1][0] %></li>
+    <% @players.each do |p| %>
+      <li><%= link_to p.name + " " + p.lastname, player_path(p.id) %></li>
+    <% end %>
   </ul>
 </div>
 </body>

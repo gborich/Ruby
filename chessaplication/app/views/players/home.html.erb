@@ -1,2 +1,24 @@
 <h1> Hello Players!</h1>
-<%= @time %>
+<p>Текущее время: <%= @time %></p>
+<br>
+<br>
+<h3>Введите данные вашего чемпиона:</h3>
+<form action="/form">
+  <input type="text" name="name" required placeholder="Введите имя" >
+  <br>
+  <br>
+  <input type="text" name="lastname" required placeholder="Введите фамилию" >
+  <br>
+  <br>
+  <input type="text" name="birth_year" required placeholder="Год рождения" >
+  <br>
+  <br>
+  <input type="text" name="death_year" placeholder="Год смерти" size="40">
+  <br>
+  <br>
+  <input type="text" name="champs_year" placeholder="Годы чемпионства" size="40">
+  <br>
+  <br>
+  <input type="submit">
+
+</form>
