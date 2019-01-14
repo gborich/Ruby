@@ -1,0 +1,13 @@
+<h1> Edit Players!</h1>
+<br>
+<br>
+<h3>Введите данные вашего чемпиона:</h3>
+
+<%= form_for :player, url: update_path(@player), method: :post do |form| %>
+  <%= form.text_field :name %>
+  <%= form.text_field :lastname %>
+  <%= form.text_field :birth_year %>
+  <%= form.text_field :birth_year %>
+  <%= form.text_field :champs_year %>
+  <%= form.submit %>
+<% end %>

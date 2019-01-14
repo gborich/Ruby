@@ -3,22 +3,12 @@
 <br>
 <br>
 <h3>Введите данные вашего чемпиона:</h3>
-<form action="/form">
-  <input type="text" name="name" required placeholder="Введите имя" >
-  <br>
-  <br>
-  <input type="text" name="lastname" required placeholder="Введите фамилию" >
-  <br>
-  <br>
-  <input type="text" name="birth_year" required placeholder="Год рождения" >
-  <br>
-  <br>
-  <input type="text" name="death_year" placeholder="Год смерти" size="40">
-  <br>
-  <br>
-  <input type="text" name="champs_year" placeholder="Годы чемпионства" size="40">
-  <br>
-  <br>
-  <input type="submit">
 
-</form>
+<%= form_for :player, url: form_path do |form| %>
+  <%= form.text_field :name %>
+  <%= form.text_field :lastname %>
+  <%= form.text_field :birth_year %>
+  <%= form.text_field :birth_year %>
+  <%= form.text_field :champs_year %>
+  <%= form.submit %>
+<% end %>

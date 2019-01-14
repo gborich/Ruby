@@ -29,14 +29,22 @@ class PlayersController < ApplicationController
   end
 
   def form
-    @player = Player.new
-    @player.name = params[:name]
-    @player.lastname = params[:lastname]
-    @player.birth_year = params[:birth_year].to_i
-    @player.death_year = params[:death_year].to_i
-    @player.champs_year = params[:champs_year].to_i
+    @player = Player.new(name: params[:player][:name], lastname: params[:player][:lastname], birth_year: params[:player][:birth_year], death_year: params[:player][:death_year], champs_year: params[:player][:champs_year])
     @player.save
     redirect_to root_path
   end
 
+  def edit
+    @player = Player.find(params[:id])
+  end
+
+  def update
+    @player = Player.update(params[:id], name: params[:player][:name], lastname: params[:player][:lastname], birth_year: params[:player][:birth_year], death_year: params[:player][:death_year], champs_year: params[:player][:champs_year])
+    redirect_to root_path
+  end
+
+  def delete
+    Player.find(params[:id]).destroy
+    redirect_to champions_path
+  end
 end

@@ -1,8 +1,10 @@
 <h1>We are the Champions</h1>
 
 <% @players.each do |p| %>
-  <h3><%= link_to p.name + " " + p.lastname, player_path(p.id) %></h3>
+  <h3><%= link_to p.name , player_path(p.id) %></h3>
+  <%= link_to 'edit', edit_path(p) %>
+  <%= link_to 'delete', delete_path(p), method: :delete %>
 <!--  <p><%#= image_tag p.img %></p>-->
-  <p> Годы жизни: <%= p.birth_year.to_s + "-" + p.death_year.to_s %></p>
+  <p> Годы жизни: <%= p.birth_year.to_s %></p>
   <p> Годы чемпионства: <%= p.champs_year %></p>
 <% end %>

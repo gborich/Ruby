@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marks</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<ul>
+  <li><a href="/users">Users</a></li>
+  <li><a href="/subjects">Subjects</a></li>
+  <li><a href="/marks">Marks</a></li>
+</ul>
+<% if logged_in? %>
+  <div style="text-align: right">
+    <%= current_user["name"] || 'User is not logged in' %>
+  </div>
+<% end %>
+<% if flash[:notice]  %>
+  <div style="background-color: lemonchiffon">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<%= yield %>
+</body>
+</html>

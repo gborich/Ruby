@@ -1,0 +1,8 @@
+<h1>Marks#new</h1>
+<%= form_for @mark do |f| %>
+  <%= f.collection_select :user_id, User.all, :id, :name %>
+  <%= f.collection_select :subject_id, Subject.all, :id, :name %>
+  <%= f.number_field :points %>
+  <%= f.text_area :comment %>
+  <%= f.submit %>
+<% end %>
